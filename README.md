@@ -115,6 +115,7 @@ The Cloud-Native Threat Detection Lab project aimed to establish a high-interact
 <img src="hpotlab/ref17.png" />
 
 - The global attack map, visualizing attack sources geographically. The prominent pin in the United States shows one of the top source locations, with a table below listing the various services (SSH, FTP, TELNET) and their corresponding attack counts and source IPs.
+- [⬇️ Download Cloud-Native Honeypot Analysis Report (PDF)](https://raw.githubusercontent.com/codewithbrandon/honeypot/main/honeypot%20lab%20report.pdf)
 
 # Final Reflections
 
