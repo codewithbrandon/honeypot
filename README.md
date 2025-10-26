@@ -21,10 +21,41 @@ The Cloud-Native Threat Detection Lab project aimed to establish a high-interact
 - Software: apt-get, git, adduser, usermod, Kibana, Suricata.
 
 ## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
 
-Every screenshot should have some text explaining what the screenshot is about.
+*Ref 1: Droplet Provisioning Details*
+<img src="hpotlab/ref1.png" />
 
-Example below.
+- This screenshot shows the details of the newly provisioned DigitalOcean Droplet, tzmnc-web-server1, including its public IP address (129.212.188.183), which will be used for SSH access and TPOT deployment.
 
-*Ref 1: Network Diagram*
+
+*Ref 2: Initial SSH Connection*
+<img src="hpotlab/ref2.png" />
+
+- The first successful SSH connection to the Droplet as the root user, confirming connectivity and noting the initial system details and pending security updates for the Ubuntu 24.04 LTS installation.
+
+
+*Ref 3: System Hardening - Package Updates*
+<img src="hpotlab/ref3.png" />
+
+- Running apt-get update && apt-get upgrade -y to ensure the operating system is fully updated and patched, which is a critical preparatory step before installing new services.
+
+*Ref 4: System Hardening - User Creation*
+<img src="hpotlab/ref4.png" />
+
+- Creating a new non-root user named martin using the adduser command, a fundamental security practice to avoid daily use of the privileged root account.
+
+*Ref 5: System Hardening - Sudo Privileges*
+<img src="hpotlab/ref5.png" />
+
+- Granting the newly created user martin administrative privileges by adding them to the sudo group using the usermod -aG sudo martin command.
+
+*Ref 6: System Hardening - User Context Switch*
+<img src="hpotlab/ref6.png" />
+
+- Switching the current shell session from root to the standard user martin using su martin to perform the rest of the installation as a non-privileged user.
+
+*Ref 7: TPOT Repsository Cloning*
+<img src="hpotlab/ref7.png" />
+
+- Executing the git clone command as the user martin to download the tpotce (TPOT Community Edition) installation files from the Telekom Security GitHub repository.
+
